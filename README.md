@@ -8,12 +8,12 @@ A personal portfolio website built as a project for the Web Development course a
 
 | File | Section | Description |
 |---|---|---|
-| `01-inicio.html` | Home | Introduction, profile photo, and skills table |
-| `02-sobre.html` | About | Professional experience and academic background |
-| `03-portifolio.html` | Portfolio | AI/ML projects with descriptions and GitHub links |
-| `04-novidades.html` | News | Published Medium articles on voice biometrics and audio processing |
-| `05-contato.html` | Contact | Contact form and LinkedIn integration |
-| `06-referencias.html` | References | Sources used during development |
+| `index.html` | Home | Introduction, profile photo, and skills table |
+| `sobre.html` | About | Professional experience and academic background |
+| `portifolio.html` | Portfolio | AI/ML projects with descriptions and GitHub links |
+| `novidades.html` | News | Published Medium articles on voice biometrics and audio processing |
+| `contato.html` | Contact | Contact form and LinkedIn integration |
+| `referencias.html` | References | Sources used during development |
 
 ## Tech Stack
 
@@ -27,12 +27,12 @@ No JavaScript or build tools — fully static site.
 
 ```
 website_pessoal/
-├── 01-inicio.html
-├── 02-sobre.html
-├── 03-portifolio.html
-├── 04-novidades.html
-├── 05-contato.html
-├── 06-referencias.html
+├── index.html
+├── sobre.html
+├── portifolio.html
+├── novidades.html
+├── contato.html
+├── referencias.html
 ├── style.css
 └── imagens/
     ├── foto-liz.jpeg
