@@ -1,0 +1,527 @@
+/* Variáveis de cor definidas e utilizadas em todo o site */
+:root {
+    --cor-quase-branco: #f5f3ee;
+    --cor-bege-claro:   #e8e4db;
+    --cor-bege-medio:   #c9c3b6;
+    --cor-verde:        #a7bb51;
+    --cor-verde-escuro: #6b8c3e;
+    --cor-marrom:       #957860;
+    --cor-marrom-medio: #6b5e50;
+    --cor-marrom-escuro:#3d3529;
+}
+
+/* Importa fonte do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* Remove margens e espaçamentos para toda a página */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--cor-quase-branco);
+    color: var(--cor-texto);
+    display: flex;                             /* Transforma o body em um container vertical — nav, section e footer empilhados um abaixo do outro */
+    flex-direction: column;                    /* Define a direção do empilhamento como coluna (de cima para baixo) */
+    min-height: 100vh
+  }
+
+header{
+    background-color: var(--cor-quase-branco);
+    padding: 20px 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                           /* Em telas pequenas, os links conseguem se mover para próxima linha */
+    gap: 30px;
+}
+
+nav ul li a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--cor-marrom-medio);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-bege-claro);
+    color: var(--cor-texto);
+}
+
+/* PÁGINA: 01_main.html */
+.main-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;                       
+}
+
+/* Seção Main */
+.main-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--cor-bege-claro);
+}
+
+.main-foto{
+    display: flex;
+    justify-content: center;                     /* Centraliza horizontalmente */
+    align-items: center;                        /* Centraliza verticalmente */
+}
+
+.main-foto img{
+    border-radius: 20px;
+    width: 350px;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;                    /* Empilha os items */
+    justify-content: center; 
+    align-items: flex-start;   
+    padding-left: 50px; 
+}
+
+.main-text h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--cor-marrom-escuro);
+}
+
+.main-role{
+    color: var(--cor-verde-escuro);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Seção de Skills */
+.skills-section{
+    padding: 64px 80px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;  
+}
+
+.skills-section h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--cor-marrom-escuro);
+    margin-bottom: 40px;
+}
+
+.skills-table{
+    border-collapse: collapse;                          /* Faz as bordas se juntem formando uma linha contínua */
+}
+
+.skills-table td, th{
+    border-bottom: 1px solid var(--cor-marrom-medio);
+    border-top: 1px solid var(--cor-marrom-medio);
+    font-size: medium;
+}
+
+.skills-table th{
+    color: var(--cor-marrom-escuro);
+    text-transform: uppercase;
+    padding: 12px 32px;
+}
+
+/* PÁGINA: 02_sobre.html */
+/* Sobre */
+.about-intro{
+    background-color: var(--cor-marrom-escuro);
+    padding: 24px 80px;
+}
+
+.about-intro h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--cor-quase-branco);
+    margin-bottom: 16px;
+}
+
+.about-intro p{
+    font-size: 15px;
+    color: var(--cor-bege-claro);
+    padding-bottom: 5px;
+}
+
+.change-word-color{
+    color: var(--cor-verde);
+}
+
+/* Currículo */
+.resume-section{
+    background-color: var(--cor-quase-branco);
+    padding: 24px 80px 64px;
+}
+
+.resume-item{
+    padding: 10px;
+}
+
+.resume-item p{
+    padding: 1px;
+}
+
+.brown-line{
+    margin-top: 10px;
+    border-bottom: 1px solid var(--cor-marrom)
+}
+
+.company-and-date{
+    display: flex;
+    justify-content: space-between;             /* Distribui os elementos na horizontal com espaço máximo entre eles */
+    gap: 800px;
+}
+
+.company{
+    font-weight: bold;
+    color: var(--cor-marrom);
+}
+
+.resume-list{
+    padding: 10px;
+}
+
+.resume-list li{
+    margin-bottom: 8px;
+}
+
+/* PÁGINA: 03_portfolio.html */
+.portfolio-section{
+    display: grid;
+    grid-template-rows: auto;
+    background-color: var(--cor-bege-claro);
+    /*border: 2px solid red;*/
+}
+
+.project{
+    display: grid;
+    grid-template-columns: 7fr 3fr; /* 80% / 20% */
+    background-color: var(--cor-quase-branco);
+    /*border: 2px solid red;*/
+}
+
+.project-text{
+    background-color: var(--cor-bege-claro);
+    padding: 30px;
+    /*border: 5px solid gray;*/
+}
+
+.project-2-text{
+    background-color: var(--cor-quase-branco);
+    padding: 30px;
+}
+
+.project-text h1{
+    padding: 10px 30px;
+    /*border: 2px solid blue;*/
+}
+
+.project-2-text h1{
+    padding: 10px 30px;
+    /*border: 2px solid blue;*/
+}
+
+.project-text h3{
+    color: var(--cor-marrom-medio);
+    padding-left: 30px;
+    /*border: 2px solid blue;*/
+}
+
+.project-2-text h3{
+    color: var(--cor-marrom-medio);
+    padding-left: 30px;
+    /*border: 2px solid blue;*/
+}
+
+.project-text p{
+    padding: 10px 30px;
+    /*border: 2px solid green;*/
+}
+
+.project-2-text p{
+    padding: 10px 30px;
+    /*border: 2px solid green;*/
+}
+
+.project-text ul{
+    padding: 10px 70px;
+    /*border: 2px solid orange;*/
+}
+
+.project-2-text ul{
+    padding: 10px 70px;
+    /*border: 2px solid orange;*/
+}
+
+.project-image{
+    background-color: var(--cor-bege-claro);
+    display: flex;
+    justify-content: center;                     /* Centraliza horizontalmente */
+    align-items: center;                        /* Centraliza verticalmente */
+    padding: 30px;
+}
+
+.project-2-image{
+    background-color: var(--cor-quase-branco);
+    display: flex;
+    justify-content: center;                     /* Centraliza horizontalmente */
+    align-items: center;                        /* Centraliza verticalmente */
+    padding: 30px;
+}
+
+.project-image img{
+    width: 600px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid var(--cor-marrom)
+}
+
+.project-2-image img{
+    width: 600px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid var(--cor-marrom)
+}
+
+.project-text-before-button{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    /*border: 2px solid greenyellow;*/
+}
+
+.project-button{
+    display: inline-block;
+    padding: 8px;
+    background-color:var(--cor-marrom-medio);
+    color:var(--cor-quase-branco);
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 13px;
+    margin:10px;
+    width: fit-content; 
+    cursor: pointer;
+    /*border: 2px solid lightseagreen;*/
+}
+
+/* PÁGINA: 04_novidades.html */
+.news-section{
+    background-color: var(--cor-marrom-medio);
+    padding: 24px 80px;
+    /*border: 2px solid red;*/
+}
+
+.news-section h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--cor-quase-branco);
+    margin-bottom: 16px;
+}
+
+.news-section p{
+    font-size: 15px;
+    color: var(--cor-bege-claro);
+    padding-bottom: 5px;
+}
+
+.blog-post-section{
+    display: grid;
+    grid-template-rows:auto;
+    padding: 30px 400px;
+    /*border: 2px solid red;*/
+}
+
+.blog-post{
+    border-bottom: 2px solid var(--cor-marrom-escuro);
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+.blog-post h1{
+    text-align: center;
+    color: var(--cor-marrom-escuro);
+    padding: 20px 80px;
+    /*border: 2px solid purple;*/
+}
+
+.blog-post p{
+    text-align: justify;
+    padding: 20px 80px;
+    /*border: 2px solid orange;*/
+}
+
+.blog-post-text-before-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px;
+    /*border: 2px solid greenyellow;*/
+}
+
+.blog-post-button{
+    display: inline-block;
+    padding: 8px;
+    background-color:var(--cor-marrom);
+    color:var(--cor-quase-branco);
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 13px;
+    margin:10px;
+    width: fit-content; 
+    cursor: pointer;
+    /*border: 2px solid lightseagreen;*/
+}
+
+/* PÁGINA: 05_contato.html */
+.form-section{
+    padding: 50px;
+    background-color: var(--cor-bege-claro);
+    /*border: 2px solid blue;*/
+}
+
+.form{
+    margin: 0 auto;                             /* auto = margem calculada pelo navegador */
+    display: block;
+    width: 400px;
+    padding: 30px;
+    border: 1px solid var(--cor-quase-branco);
+    border-radius: 20px;
+    background-color: var(--cor-quase-branco);
+}
+
+.form-row{
+    width: 100%;
+    margin: 15px 0;
+}
+
+.radio-option{
+    border:none;                                   /* Remove a borda do fieldset */
+}
+
+.checkbox-option{
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-marrom-medio);
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+
+/* Botões: Enviar e Limpar */
+input[type=submit],
+input[type=reset]{
+    display:inline;
+    background-color:var(--cor-verde);
+    color: var(--cor-marrom-escuro);
+    border-radius:15px;
+    border: 1px solid var(--cor-verde);
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type=reset]{
+    background-color: var(--cor-quase-branco);
+    border-color: var(--cor-bege-medio);
+}
+
+input[type=radio],
+input[type=checkbox]{
+    accent-color: var(--cor-verde);                /* Modifica a cor de dentro do radio e do checkbox */
+    cursor: pointer;
+}
+
+.linkedin-button-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: var(--cor-quase-branco);
+    /*border: 2px solid red;*/
+}
+
+/* PÁGINA: 06_referencias.html */
+.references-section{
+    background-color: var(--cor-bege-claro);
+    flex-grow: 1;
+    /*border: 2px solid red;*/
+}
+
+.references-section h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--cor-quase-branco);
+    margin-bottom: 16px;
+}
+
+.references-section-title{
+    background-color: var(--cor-marrom);
+    padding: 24px 80px;
+    /*border: 2px solid red;*/
+}
+
+.references-section-title p{
+    color: var(--cor-quase-branco);
+}
+
+.bullet-point-section ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: var(--cor-marrom-escuro);
+    padding: 20px 500px;
+    margin: 40px;
+    /*border: 2px solid blue;*/
+}
+
+.references-section li{
+    padding: 7px;
+    /*border: 2px solid orange;*/
+}
+
+/* RODAPÉ */
+footer{
+    background-color: var(--cor-marrom-escuro);
+    color: var(--cor-bege-medio);
+    padding: 10px; 
+    text-align: center;
+}
+
+/* Adiciona o layout responsivo */
+@media (max-width: 600px) {
+    nav, article {width: 100%; height: auto;}
+}

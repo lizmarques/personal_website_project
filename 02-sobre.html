@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.png" type="image/png">
+    <title>Website Pessoal</title>
+</head>
+<body>
+    <header>
+        <!--Menu de navegação-->
+        <nav>
+            <ul>
+                <li><a href="01-inicio.html">Início</a></li>
+                <li><a href="02-sobre.html">Sobre</a></li>
+                <li><a href="03-portifolio.html">Portifólio</a></li>
+                <li><a href="04-novidades.html">Novidades</a></li>
+                <li><a href="05-contato.html">Contato</a></li>
+                <li><a href="06-referencias.html">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção da Apresentação Pessoal -->
+    <section class="about-intro">
+        <h1>Sobre <span class="change-word-color">mim</span></h1>
+        <p>Desenvolvedora focada em soluções de inteligência artificial, com 3 anos de experiência na área.</p>
+    </section>
+
+    <!-- Seção do Currículo-->
+    <section class="resume-section">
+
+        <h2>Experiência Profissional</h2>
+
+        <div class="resume-item">
+            <div class="company-and-date">
+                <p class="company">Avanade</p>
+                <p>Abril/2026 - Presente</p>
+            </div>
+            <p>Engenheira de IA<p>
+        </div>
+        <hr class="brown-line">
+
+        <div class="resume-item">
+            <div class="company-and-date">
+                <p class="company">Objeto Inc.</p>
+                <p>Fevereiro/2025 - Junho/2025</p>
+            </div>
+            <p>Engenheira de IA</p>
+            <ul class="resume-list">
+                <li>Desenvolvi um Agente RAG com recuperação contextual para aumentar o engajamento dos usuários e a qualidade das interações no Datascout. Para viabilizar sua funcionalidade, criei um pipeline em Jupyter Notebooks para realizar web scraping, limpeza e normalização dos dados, além da geração de embeddings semânticos armazenados no Supabase Vector, que serviu como base de conhecimento do agente.</li>
+                <li>Implementei um sistema de IA multiagente para analisar mais de 230 mil chamadas de suporte ao cliente, criando agentes especializados (ex: Agente de Categoria, Análise de Sentimento, QA, Detecção de Objetivos e Barreiras) com prompts otimizados e utilizando o structured output da OpenAI para resultados consistentes.</li>
+            </ul>
+        </div>
+        <hr class="brown-line">
+
+        <div class="resume-item">
+            <div class="company-and-date">
+                <p class="company">Accenture</p>
+                <p>Outubro/2023 — Janeiro/2025</p>
+            </div>
+            <p>Engenheira de Software</p>
+            <ul class="resume-list">
+                <li>Ministrei duas sessões de treinamento sobre Prompt Engineering para um total de 24 funcionários. Cada sessão de 8 horas foi dividida entre instrução teórica e prática, permitindo aos participantes desenvolver casos de uso utilizando o conteúdo aprendido.</li>
+                <li>Criei uma automação que reduziu 10 horas de trabalho manual e gerou R$ 2.000,00 em economia mensal, a qual extraia usuários administradores de quatro provedores de nuvem diferentes (Azure, OCI, AWS e GCP).</li>
+                <li>Reduzi os custos operacionais em R$ 275,00 por mês e otimizei 19 tickets mensais por meio de uma automação que integrou a criação de usuários no banco de dados Oracle com o Jira. A automação validava as entradas no banco, criava os usuários, enviava as credenciais por e-mail, anexava a documentação e fechava os tickets automaticamente.</li>
+                <li>Prompt engineering para LLMs</li>
+            </ul>
+        </div>
+        <hr class="brown-line">
+
+        <div class="resume-item">
+            <div class="company-and-date">
+                <p class="company">Dataside</p>
+                <p>Março/2023 — Setembro/2023</p>
+            </div>
+            <p>Cientista de Dados Júnior</p>
+            <ul class="resume-list">
+                <li>Participei de reuniões com clientes para fazer o entendimento da demanda e desenvolver soluções de IA personalizadas.</li>
+                <li>Desenvolvi uma aplicação utilizando Embeddings (modelo text-embedding-ada-002), a API do GPT-3, Python e Streamlit para otimizar a busca por informações em manuais de máquinas. O principal objetivo dessa ferramenta era responder com precisão e eficiência às perguntas dos trabalhadores durante a manutenção de máquinas, tanto em português quanto em inglês.</li>
+                <li>Construí uma aplicação utilizando a API do GPT-3.5 e Python para extrair tópicos-chave de relatórios médicos. O principal objetivo dessa ferramenta era agilizar o trabalho dos colaboradores, uma vez que a extração de tópicos era realizada manualmente pelos funcionários da empresa.</li>
+                <li>Desenvolvi uma aplicação utilizando o serviço Speech-to-Text da Azure, a API do GPT-3.5, Python e o Streamlit para extrair informações relevantes de chamadas de um call center, como: motivo da ligação, sentimentos do cliente, se o problema foi resolvido ou não e o resumo da chamada.</li>
+                <li>Criei aplicações com LangChain para extrair insights de arquivos .csv (CSV Agent), para integrar um chatbot com conteúdo de sites específicos via Bing Search, e otimizar a redação de e-mails utilizando funcionalidades de voz ou texto com o Gmail Toolkit.</li>
+            </ul>
+        </div>
+        <hr class="brown-line">
+
+        <div class="resume-item">
+            <div class="company-and-date">
+                <p class="company">Dataside</p>
+                <p>Março/2022 — Março/2023</p>
+            </div>
+            <p>Cientista de Dados Trainee</p>
+            <ul class="resume-list">
+                <li>Implementei uma aplicação de ata automatizada utilizando Python, OpenAI (GPT-3 e Whisper), Reportlab e Streamlit, a qual garantia a transcrição completa dos conteúdos abordados, reduzindo o trabalho operacional.</li>
+                <li>Certificações Microsoft: AZ-900, AI-900 e DP-900</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Educação Acadêmica -->
+        <h2>Educação Acadêmica</h2>
+        <div class="resume-item">
+            <div class="company-and-date">
+                <p class="company">Universidade Veiga de Almeida (UVA)</p>
+                <p>Fevereiro/2026 — Dezembro/2029</p>
+            </div>
+            <p>Bacharelado em Ciência da Computação</p>
+        </div>
+
+        <div class="resume-item">
+            <div class="company-and-date">
+                <p class="company">Universidade Federal do Rio de Janeiro (UFRJ)</p>
+                <p>Agosto/2013 — Setembro/2016</p>
+            </div>
+            <p>Bacharelado em Administração de Empresas</p>
+        </div>
+        <br>
+  
+        <!-- Idiomas -->
+        <h2>Idiomas</h2>
+        <div class="resume-item">
+            <p>Inglês: avançado</p>
+        </div>
+
+
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <p>Copyright &copy; 2026 Liz Marques - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

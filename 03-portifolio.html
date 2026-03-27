@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.png" type="image/png">
+    <title>Website Pessoal</title>
+</head>
+<body>
+    <header>
+        <!--Menu de navegação-->
+        <nav>
+            <ul>
+                <li><a href="01-inicio.html">Início</a></li>
+                <li><a href="02-sobre.html">Sobre</a></li>
+                <li><a href="03-portifolio.html">Portifólio</a></li>
+                <li><a href="04-novidades.html">Novidades</a></li>
+                <li><a href="05-contato.html">Contato</a></li>
+                <li><a href="06-referencias.html">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Projetos -->
+    <section class="portfolio-section">
+        <article class="project">
+            <div class="project-text">
+                <h1>Projeto 1</h1>
+                <h3>Artemis – Assistente Virtual por Voz</h3>
+                <p>Aplicação de assistente virtual desenvolvida para explorar as APIs de Speech Recognition e Text-to-Speech. 
+                    A Artemis responde a comandos de voz e oferece funcionalidades como:
+                </p>
+                    <ul>
+                        <li>Agenda diária</li>
+                        <li>Notícias</li>
+                        <li>Bloco de Notas por voz</li>
+                        <li>Pesquisa no Google</li>
+                        <li>Integração com o Microsoft Teams</li>
+                    </ul>
+                <div class="project-text-before-button">
+                    Confira o projeto completo:
+                    <a class="project-button" href="https://github.com/lizmarques/Virtual_Assistant_Project" target="_blank">
+                    Ver no GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-image">
+                    <img src="imagens/projeto-1.PNG" alt="Projeto 1">
+            </div>
+        </article>
+
+        <article class="project">
+            <div class="project-2-text">
+                <h1>Projeto 2</h1>
+                <h3>Detecção de Anomalias em Máquinas Industriais por Classificação de Áudio</h3>
+                <p> Ferramenta de detecção de anomalias via classificação de áudio desenvolvida no contexto de Smart Factories. 
+                    O modelo foi treinado com foco em ventiladores industriais, mas pode ser aplicado a diferentes equipamentos, 
+                    como bombas, válvulas e trilhos deslizantes. Seus principais objetivos são:
+                </p>
+                    <ul>
+                        <li>Reduzir custos de manutenção</li>
+                        <li>Otimizar a produção</li>
+                        <li>Minimizar interrupções não planejadas</li>
+                        <li>Aumentar a produtividade do maquinário industrial</li>
+                    </ul>
+                <div class="project-text-before-button">
+                    Confira o projeto completo:
+                    <a class="project-button" href="https://github.com/lizmarques/Audio_Anomaly_Detection_Project" target="_blank">
+                    Ver no GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-2-image">
+                <img src="imagens/projeto-2.png" alt="Projeto 2">
+            </div>
+
+        </article>
+
+        <article class="project">
+            <div class="project-text">
+                <h1>Projeto 3</h1>
+                <h3>RAG Híbrido para Análise de Documentos Financeiros</h3>
+                <p> RAG híbrido que combina embeddings densos, BM25 e reranking com ColBERT para análise de documentos financeiro, 
+                    utilizando o release de resultados do 3T25 da Méliuz como fonte de dados.
+                    O pipeline é composto pelas seguintes etapas:
+                </p>
+                    <ul>
+                        <li>Extração e estruturação de conteúdo: conversão de documentos PDF em Markdown estruturado</li>
+                        <li>Configuração da Collection: criação da collection no Qdrant com múltiplos espaços vetoriais</li>
+                        <li> Chunking de texto: segmentação do texto orientada pela estrutura e por limites de tokens, mantendo a coerência semântica.</li>
+                        <li> Interpretação de gráficos: extração de dados visuais via Gemini, convertendo gráficos em texto recuperável e JSON estruturado</li>
+                        <li>Embedding e ingestão: geração de embeddings densos, esparsos e ColBERT, armazenados no Qdrant</li>
+                        <li>Pipeline de consulta: recuperação híbrida com fusão RRF e reranking ColBERT, seguido da geração de resposta via LLM</li>
+                        <li>Avaliação do RAG: comparação entre Dense-only e Hybrid RAG feita através de 5 perguntas, utilizando a mesma base documental e o mesmo prompt.</li>
+                        <li>Gerador de relatório: exportação dos resultados da avaliação em tabela Markdown</li>
+                    </ul>
+
+                <div class="project-text-before-button">
+                    Confira o projeto completo:
+                    <a class="project-button" href="https://github.com/lizmarques/hybrid_rag_project" target="_blank">
+                    Ver no GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-image">
+                <img src="imagens/projeto-3.png" alt="Projeto 3">
+            </div>
+        </article>
+    </section>
+
+    <!--Rodapé-->
+    <footer>
+        <p>Copyright &copy; 2026 Liz Marques - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

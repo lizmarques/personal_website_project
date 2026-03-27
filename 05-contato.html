@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/icone.png" type="image/png">
+    <title>Website Pessoal</title>
+</head>
+<body>
+    <header>
+        <!--Menu de navegação-->
+        <nav>
+            <ul>
+                <li><a href="01-inicio.html">Início</a></li>
+                <li><a href="02-sobre.html">Sobre</a></li>
+                <li><a href="03-portifolio.html">Portifólio</a></li>
+                <li><a href="04-novidades.html">Novidades</a></li>
+                <li><a href="05-contato.html">Contato</a></li>
+                <li><a href="06-referencias.html">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <!--Seção do Formulário-->  
+        <form class="form" action="mailto:fulano@gmail.com" method="POST" autocomplete="off">
+
+            <h2>Entre em contato</h2>
+
+            <p>Preencha o formulário abaixo.</p>
+
+            <!--Nome-->
+            <div class="form-row">
+                    <label for="i_nome">Nome:</label>
+                    <input type="text" name="nome" id="i_nome" placeholder="Seu nome*" minlength="3" required>
+            </div>
+
+            <!--E-mail-->
+            <div class="form-row">
+                <label for="i_email">E-mail:</label>
+                <input type="email" name="email" id="i_email" placeholder="Seu e-mail*" required>
+            </div>
+
+            <!--Telefone-->
+            <div class="form-row">
+                <label for="i_telefone">Telefone:</label>
+                <input type="text" name="telefone" id="i_telefone" placeholder="(99)99999-9999" pattern="\(\d{2}\)\d{4,5}-\d{4}">
+            </div>
+            
+            <!--Assunto-->
+            <fieldset class="radio-option">
+                <legend>Assunto:</legend>
+            
+                <input type="radio" name="assunto" id="r_proposta" value="Proposta de Projeto">
+                <label for="r_proposta">Proposta de Projeto</label><br>
+                
+                <input type="radio" name="assunto" id="r_parceria" value="Parceria">
+                <label for="r_parceria">Parceria</label><br>
+            
+                <input type="radio" name="assunto" id="r_duvidas" value="Dúvidas">
+                <label for="r_duvidas">Dúvidas</label><br>
+            
+                <input type="radio" name="assunto" id="r_outros" value="Outros">
+                <label for="r_outros">Outros</label><br>
+            </fieldset>
+
+            <!--Mensagem-->
+            <div class="form-row">
+                <label for="txt_mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="txt_mensagem" placeholder="Sua mensagem*" maxlength="800" required></textarea>
+            </div>
+
+            <!--Checkbox-->
+            <div class="checkbox-option">
+                <input type="checkbox" name="newsletter" id="cb_newsletter">
+                <label for="cb_newsletter">Aceito receber a Newsletter</label>
+            </div>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </section>
+
+    <!-- Logo do Linkedin -->           
+    <!--taget="_blank": abre o link em outra aba-->
+    <div class="linkedin-button-section">
+        <a class="linkedin-button" href="https://www.linkedin.com/in/lizmarques" target="_blank">
+            <img src="imagens/linkedin-logo.png" alt="LinkedIn" width="90">
+        </a>
+    </div>
+
+    <!--Rodapé-->
+    <footer>
+        <p>Copyright &copy; 2026 Liz Marques - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
