@@ -19,7 +19,7 @@ A personal portfolio website built as a project for the Web Development course a
 
 - **HTML5** — semantic structure and page content
 - **CSS3** — layout (Flexbox + Grid), CSS custom properties, responsive design
-- **Google Fonts** — Cormorant Garamond (headings) + DM Sans (body)
+- **Google Fonts** — Cormorant Garamond (headings)
 
 No JavaScript or build tools — fully static site.
 
