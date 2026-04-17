@@ -501,9 +501,8 @@ input[type=checkbox]{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     border-color: var(--cor-marrom-escuro);
-    padding: 20px 500px;
+    padding: 20px 350px;
     margin: 40px;
     /*border: 2px solid blue;*/
 }
@@ -523,5 +522,5 @@ footer{
 
 /* Adiciona o layout responsivo */
 @media (max-width: 600px) {
-    nav, article {width: 100%; height: auto;}
+    nav, article, body{width: 100%; height: auto;}
 }
