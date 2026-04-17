@@ -79,7 +79,8 @@ nav ul li a:hover {
 
 .main-foto img{
     border-radius: 20px;
-    width: 350px;
+    width: 40%;
+    /*width: 350px;*/
 }
 
 .main-text{
